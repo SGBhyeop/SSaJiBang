@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>New Web</title>
-        <style>
-            h1 {
-                text-align:center
-            }
-            ul {
-                list-style:none
-            }
-            li {
-                float:left; 
-                margin-right:10px
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>review</title>
+    <script type="text/javascript">
+      function buttonClick() {
+        const body = document.getElementById("as");
+        body.style.backgroundColor = "#000000";
+      };
+      function inputClick(input) {
+        alert(input)
+      };
 
-            }
-            img {
-                width:30%;
-                height:20%;
-            }
-        </style>        
-    </head>
+    </script>
+  </head>
+  <body id="body">
+    <nav>
+      <h2>허윤서스럽다</h2>
+      <div class="option">
+        <div class="ser">검색</div>
+        <div class="dark">다크모드</div>
+      </div>
+    </nav>
 
-    <body>
+    <div class="container">
 
-        <h1>HTML</h1>
+      <div class="labels">
+        <h4>Labels</h4>
         <ul>
-            <li><a href="http://www.naver.com">NAVER</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li>last</li>
+          <li class="lb"><button type="button" name="button" onclick="buttonClick()">application</button></li>
+          <li class="lb"><input type="text" onchange="inputClick(this.value)">
+                          <input type="button" value="버튼"></li>
+          <li class="lb">audinoo</li>
+          <li class="lb">basduuus</li>
         </ul>
-        
-        <img src="./AI.png" alt="aa">
-        <p>
-            -first p of Hyeop- Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Incidunt tempore corporis nobis enim magni placeat facere doloremque quam, accusamus ratione sit aspernatur excepturi obcaecati aliquid. 
-            Enim, esse. Voluptas, tempora. Dolorem.
-        </p>
+      </div>
+      <div class="right" id="as">
+        <div class="contents">
+          <div class="post1">#71</div>
+          <div class="post2">#70</div>
+          <div class="post3">#69</div>
+        </div>
 
-    </body>
+        <div class="ppost">
+          <h4>Popular Post</h4>
+          <div class="ppost1">프로그래밍 언어를 웹에서 실행하고 공유도 가능한 사이트</div>
+        </div>
+      </div>
+
+
+      <div class="empty">
+      </div>
+
+
+    </div>
+  </body>
 </html>
